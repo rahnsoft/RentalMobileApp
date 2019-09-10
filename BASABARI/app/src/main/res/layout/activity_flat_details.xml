@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rit.basa_bari.details_Activity.MessDetailsActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageViewFlat"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_launcher_background" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_height="120dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/fmonthId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/frentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rent"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/fphoneIcon"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_phone_black_24dp"/>
+        <TextView
+            android:id="@+id/fphoneTv"
+            android:text="@string/phone_number"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_textsms" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/msgTxt"
+                android:layout_width="327dp"
+                android:layout_height="76dp"
+                android:layout_marginLeft="10dp"
+                android:autoLink="all"
+                android:clickable="true"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="true"
+                android:gravity="bottom"
+                android:hint="Compose Message Here."
+                android:inputType="text|textAutoComplete|textAutoCorrect|textMultiLine|textLongMessage"
+                android:isScrollContainer="true"
+                android:lines="5"
+                android:maxLines="5"
+                android:minLines="6"
+                android:overScrollMode="ifContentScrolls"
+                android:scrollbarSize="10dp"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbars="vertical"
+                android:textAlignment="gravity"
+                android:textEditPasteWindowLayout="@drawable/ic_textsms"
+                android:textIsSelectable="true" />
+
+
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/msgTxt"
+                android:layout_alignRight="@+id/msgTxt"
+
+
+                android:text="SEND SMS">
+
+            </Button>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_place_black_24dp"/>
+        <TextView
+            android:id="@+id/flocationTv"
+            android:text="@string/enter_location"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_note_black_24dp"/>
+        <TextView
+            android:id="@+id/fdescriptionTv"
+            android:text="@string/description"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+</ScrollView>

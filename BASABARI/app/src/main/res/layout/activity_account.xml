@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/log"
+    android:scaleType="centerCrop"
+    android:gravity="center"
+    tools:context=".activities.AccountActivity">
+
+    <TextView
+        android:id="@+id/create"
+        android:onClick="createAccount"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textColor="#36915a"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/round_shape"
+        android:text="Create Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  />
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_below="@+id/create"
+        android:layout_gravity="bottom"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Already have an account?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/already"
+        android:onClick="clickSignin"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:textColor="#36915a"
+        android:textSize="14sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@drawable/round_shape"
+        android:text="Sign in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

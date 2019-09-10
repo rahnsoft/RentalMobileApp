@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "964764250861",
+    "firebase_url": "https://basabari-faddc.firebaseio.com",
+    "project_id": "basabari-faddc",
+    "storage_bucket": "basabari-faddc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964764250861:android:f886e64078524273",
+        "android_client_info": {
+          "package_name": "com.rit.basa_bari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "964764250861-nmafte0dauviqm9g5hoirvnbinia9u7g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rit.basa_bari",
+            "certificate_hash": "fe9235017a59f6c9774d9dec2471321dd4ee8db7"
+          }
+        },
+        {
+          "client_id": "964764250861-sb50q3en6hr0dproj4au9ls8s9f1hfbh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0W7vEw2-Itpds5v-woxin3rmdZMYD-68"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "964764250861-sb50q3en6hr0dproj4au9ls8s9f1hfbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
